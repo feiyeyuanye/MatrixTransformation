@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.matrixtransformation.ToopBar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:leftText="返回"
+        custom:leftTextBackground="@drawable/btn_selector"
+        custom:leftTextColor="#00f565"
+        custom:rightText="下一页"
+        custom:rightTextBackground="@drawable/btn_selector"
+        custom:rightTextColor="#00f565"
+        custom:title="提示"
+        custom:titleTextColor="#0000ff"
+        custom:titleTextSize="10sp">
+
+
+    </com.example.matrixtransformation.ToopBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="图片处理"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnPrimaryColor"
+            android:text="PrimaryColor"
+            android:textSize="18sp" />
+
+        <Button
+            android:onClick="ColorMartix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ColorMartix"
+            android:textSize="18sp" />
+
+        <Button
+            android:onClick="PixPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PixPicture"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</RelativeLayout>
